@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Form</title>
+
+</head>
+<script>
+    function validname() {
+        let name = document.getElementById("name").value
+        let errorname = document.getElementById("errorname")
+
+        if (name.length < 3) {
+            errorname.innerHTML = "please enter correct name"
+        } else {
+            errorname.innerHTML = ""
+        }
+    }
+
+    function validemail() {
+        let email = document.getElementById("email").value
+        let erroremail = document.getElementById("erroremail")
+
+        if (email.endsWith('gmail')) {
+            erroremail.innerHTML = ""
+        } else {
+            erroremail.innerHTML = "please enter gmail.com"
+        }
+    }
+
+    function validpassword() {
+        let password = document.getElementById("password").value
+        let errorpassword = document.getElementById("errorpassword")
+
+        if (password.length < 3) {
+            errorpassword.innerHTML = "please enter strong password"
+        } else {
+
+            errorpassword.innerHTML = ""
+        }
+    }
+
+    function validnum() {
+        let number = document.getElementById("number").value
+        let errornumber = document.getElementById("errornumber")
+
+        if (number.length < 3) {
+            errornumber.innerHTML = "please enter atleast 10 numbers"
+        } else {
+
+            errornumber.innerHTML = ""
+        }
+    }
+
+    function getFormvalue() {
+        let r_name = document.querySelector("#name").value;
+        let r_email = document.querySelector("#email").value;
+        let r_password = document.querySelector("#password").value;
+        let r_number = document.querySelector("#number").value;
+        let r_select = document.querySelector("#select").value;
+        display_name.innerHTML = r_name;
+        display_email.innerHTML = r_email;
+        display_password.innerHTML = r_password;
+        display_number.innerHTML = r_number;
+        display_select.innerHTML = r_select;
+
+        event.preventDefault();
+    };
+</script>
+
+<body>
+    <h1 style="text-align: center; color: whitesmoke;">Registration Form</h1><br> <br>
+    <form>
+        <div id="form-1">
+            <div id="form-2"> <br>
+
+                <label>Name: <br><input type="text" onkeyup="validname()" id="name" /></label>
+                <p id="errorname">
+                </p>
+                <label>Email: <br><input type="text" onkeyup="validemail()" id="email" /></label> 
+                <p id="erroremail">
+                </p>
+                <label>Password: <br><input type="text" onkeyup="validpassword()" id="password" /></label> 
+                <p id="errorpassword">
+                </p>
+                <label>Number: <br><input type="text" onkeyup="validnum()" id="number" /></label> 
+                <p id="errornumber">
+                </p>
+                Select:  <select name="course" id="select">
+                    <option value="Bcom">Bcom</option>
+                    <option value="Msc">Msc</option>
+                    <option value="Bsc">Bsc</option>
+                    <option value="Bba">Bba</option>
+                </select><br><br>
+                <button id="btn1" onclick="getFormvalue()">Submit</button>
+                <button id="btn1">Cancel</button>
+            </div>
+        </div>
+    </form>
+    <div id="data">
+        <p class="h1">Name: <span id="display_name"></span></p>
+        <p class="h1">Email: <span id="display_email"></span></p>
+        <p class="h1">Password: <span id="display_password"></span></p>
+        <p class="h1">Number: <span id="display_number"></span></p>
+        <p class="h1">Select: <span id="display_select"></span></p>
+    </div>
+</body>
+
+</html>

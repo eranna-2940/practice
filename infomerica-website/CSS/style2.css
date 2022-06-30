@@ -1,0 +1,167 @@
+body {
+    background-image: url('../Images/b.jpg');
+
+
+}
+
+#background {
+    background-color: lightgray;
+    width: 100%;
+    height: 105px;
+
+}
+
+#nava1 {
+    font-size: 25px;
+    padding: 1rem;
+}
+
+#nava1 ul  {
+    list-style-type: none;
+    margin-left: -5rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-right: 5rem;
+    margin-top: -5rem;
+    
+}
+#nava1 ul a:active{
+    background-color: gold;
+}
+
+.btn {
+    background-color: whitesmoke;
+    color: black;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 4rem;
+    border: 2rem;
+    margin-right: -25rem;
+
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+
+
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.btn1 ul {
+
+    width: 5rem;
+    height: 2rem;
+    border-radius: 4rem;
+    border: 2rem;
+
+}
+
+.videos {
+    text-align: center;
+    gap: 15rem;
+    border: 1rem solid black;
+}
+
+.btn2 {
+    background-color: blueviolet;
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 4rem;
+    border: 2rem;
+    gap: 2rem;
+
+
+}
+
+.btn2:hover {
+    background-color: black;
+    color: white;
+
+
+
+}
+
+.icons {
+    width: 2rem;
+    height: 5rem;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.all-browsers {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.all-browsers>h1,
+.browser {
+    margin: 10px;
+    padding: 5px;
+}
+
+.browser {
+    background: white;
+}
+
+.value {
+    list-style-type: none;
+}
+
+.browser>h2,
+p {
+    margin: 4px;
+    font-size: 90%;
+}
+
+.videos {
+    border-radius: 4rem;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+}
+
+.link {
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+}
+
+.face {
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+}
+
+.git {
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

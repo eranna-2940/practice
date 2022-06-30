@@ -1,0 +1,17 @@
+<script>
+    const person = {
+        name:"raviteja",
+        city: "hyderabad",
+        state: "ma",
+        place: "va",
+        address: {
+            street: "123456 place",
+            apt:"124"
+
+        },
+        getaAddress(){
+            return `${this.person.name} ${this.person.city} ${this.person.street} ${this.person.state}`        
+        }
+    }
+console.log(person.getaAddress)
+</script>

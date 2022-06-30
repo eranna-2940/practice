@@ -1,0 +1,37 @@
+body {
+    background-image: url('./meeting.png');
+}
+#form-1{
+    justify-content: center;
+    margin-left: 30rem;
+    
+}   
+#form-2{
+    background-color: rgb(141, 138, 138);
+    padding-left: 3rem;
+    border: solid 5px  black;
+    border-radius: 2rem;
+    width: 320px;
+    height: 500px;
+}
+#btn1{
+    background-color: gold;
+    border-radius: 2rem;
+    border: solid 2px whitesmoke;
+    font-size: 1rem;
+}
+#data{
+    text-align: center;
+    margin-left: 32rem;
+    margin-bottom: 15rem;
+    background-color: gray;
+    width: 320px;
+    color: white;
+    border: solid 1px white;
+    margin-top: 100px;
+
+}
+.h1{
+    text-align:left;
+    margin-right: -2rem;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style text="stylsheet" src="style.css" ></style>
+    <title>Document</title>
+</head>
+<style>body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  div.a {
+  white-space: nowrap; 
+  width: 100px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #000000;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+}
+
+div.a:hover {
+  overflow: visible;
+}
+.btn{
+  margin-bottom: 10px;
+  
+}
+  </style>
+
+<body>
+    <h1>Welcome music world</h1>
+    <div class="a">This is some long text that will not fit in the box.</div>
+    <div class="btn">
+      <button class="class" onclick="playpause()">Play/pause</button>
+      <button class="class" onclick="small()">small</button>
+      <button class="class" onclick="medium()">medium</button>
+      <button class="class" onclick="large()">large</button>
+    </div>
+   <!--  <audio controls autoplay>
+        <source src="song1.mp3" type="audio/mpeg">
+      </audio>
+     <img src="download.jpg" > -->
+     
+     <video id="video" width="520" height="440" controls src="Vegetables - 4572.mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <script>
+       
+       let videos =document.querySelector('video');
+
+       function playpause(){
+          if(videos.paused)
+           videos.play()
+      else
+        videos.pause()
+      }
+       function small(){
+        videos.width = 200;
+       }
+       function medium(){
+        videos.width = 400;
+       }
+       function large(){
+        videos.width = 1000;
+       }
+
+      </script>
+</body>
+</html>

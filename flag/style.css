@@ -1,0 +1,40 @@
+body{
+    background-image: url('./b.webp');
+}
+#flag {
+    background-color: red;
+    width: 450px;
+    height: 20px;
+    margin-bottom: 22px;
+    
+
+}
+#flag-item{
+    margin-left: 25rem;
+    margin-top: 8rem;
+    background-color: whitesmoke;
+    width: 450px;
+    height: 360px;
+    
+}
+
+#flag1 {
+    background-color: #3C3B6E;;
+    width: 200px;
+    height: 200px;
+    margin-top: -378px;
+}
+
+
+
+.star {
+    color: white;
+    justify-content: center;
+    display: inline;
+
+}
+
+.star-row {
+    display: flex;
+    justify-content: space-between;
+}

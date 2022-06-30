@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style1.css">
+    <script src="./script.js"></script>
+    <title>Form</title>
+
+</head>
+<script>
+    
+function validemail() {
+    let email = document.getElementById("email").value
+    let erroremail = document.getElementById("erroremail")
+
+    if (email.endsWith('gmail')) {
+        erroremail.innerHTML = ""
+    } else {
+        erroremail.innerHTML = "please enter gmail.com";
+        erroremail.style.color = 'red';
+    }
+}
+
+function validpassword() {
+    let password = document.getElementById("password").value;
+    let errorpassword = document.getElementById("errorpassword");
+
+    if (password.length < 3) {
+        errorpassword.innerHTML = "please enter strong password"
+        errorpassword.style.color = 'red';
+    } else {
+
+        errorpassword.innerHTML = ""
+    }
+}
+
+
+function getFormvalue() {
+
+    //sessionStorage.setItem('email',r_email.value)
+    //sessionStorage.setItem('password',r_password.value)
+
+
+    let r_email = document.getElementById("email");
+    let r_password = document.getElementById("password");
+
+    localStorage.setItem('email', r_email.value);
+    localStorage.setItem('password', r_password.value);
+
+ 
+
+    if(email.value == "" || password.value == ""){
+        alert('please filled all inputes')
+    }
+    document.write(`
+            {Email:${r_email.value}<br>
+            Password:${r_password.value}}
+
+        `);
+
+};
+
+
+
+</script>
+<body>
+
+    <h1></h1><br> <br><br><br>
+    <form>
+        <div id="form-1">
+            <div id="form-2"> <br><br><br>
+
+                <label>Email: <br><input type="text" onkeyup="validemail()" id="email" /></label>
+
+                <p id="erroremail">
+                </p>
+                <label>Password: <br><input type="Password" onkeyup="validpassword()" id="password" /></label>
+                <p id="errorpassword">
+                </p><br>
+
+                <button id="btn1" onclick="getFormvalue()">Submit</button>
+                <button id="btn1">Cancel</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
